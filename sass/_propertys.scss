@@ -1,0 +1,11 @@
+@mixin property ($space){
+    display: grid;
+    grid-gap: $space;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin degin($part2) {
+    border: 2px solid black;
+    margin-bottom:$part2;
+}

@@ -1,0 +1,69 @@
+@import "colors";
+@import "propertys";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-transform: capitalize;
+}
+
+.container {
+    @include property(1rem);
+    @include degin(0rem);
+    padding: 20px;
+}
+.head-section {
+    @include property(0);
+    @include degin(1.5rem);
+    padding: 30px;
+}
+
+
+
+.nav-section {
+    @include degin(1.5rem);
+    padding: 10px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        list-style-type: none;
+    }
+    a {
+        @include degin(0);
+        text-decoration: none;
+        $text-color: black;
+        color: $text-color;
+    }
+}
+.section {
+    @include property(0rem);
+    @include degin(1.5);
+    grid-template-columns: auto auto;
+    width: 100%;
+    padding: 20px;
+}
+.side-bar {
+    @include property(0.5);
+    @include degin(1.5rem);
+    width: 40%;
+    padding: 20px;
+}
+.main-content-section {
+    @include property(1rem);
+    @include degin(1.5rem);
+    width: 60%;
+    padding: 20px;
+}
+footer {
+    @include property(0);
+    @include degin(0.8rem);
+    padding: 20px;
+}
